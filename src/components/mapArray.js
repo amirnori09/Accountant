@@ -5,23 +5,30 @@ import { TbClipboardList } from "react-icons/tb";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { RxExit } from "react-icons/rx";
 
+const Divider = () => (
+  <div className="divider"/>
+);
+
 const MapArray = () => {
   const items = [
-    { name: 'داشبورد', icon: '<LuLayoutDashboard/>' },
-    { name: 'Item 2', icon: 'icon2' },
-    { name: 'Item 3', icon: 'icon3' }
+    { name: 'داشبورد', icon: LuLayoutDashboard },
+    { name: 'پروفایل', icon: CgProfile },
+    { name: 'لیست سفارشات', icon: TbClipboardList },
+    { name: 'آدرس', icon: MdOutlineLocationOn },
+    { name: 'خروج', icon: RxExit }
   ];
 
   return (
-    <div>
-      <ul>
+    <div >
+      <ul className=''>
         {items.map((item, index) => (
-          <li key={index}>
-            <div>
+          <React.Fragment key={index}>
+            <li className='flex gap-3 items-center '>
+              {React.createElement(item.icon, { size: 25 })}
               <span>{item.name}</span>
-              <img src={`/${item.icon}.png`}  />
-            </div>
-          </li>
+            </li>
+            {index !== items.length - 1 && <Divider />}
+          </React.Fragment>
         ))}
       </ul>
     </div>

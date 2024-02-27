@@ -1,9 +1,8 @@
-const page = () => {
+import React from 'react';
+const Page = () => {
     return ( 
         <>
-        
-    
-        <div className="container flex items-center justify-center font-sans my-52">
+        <main className="container flex items-center justify-center font-sans my-52">
             <div className="flex flex-col justify-center items-start w-72">
                 <img src="" alt="" />
                 <p className="text-3xl font-black mb-8">خوش آمدید</p>
@@ -15,10 +14,9 @@ const page = () => {
                 <button className="bg-[#003928] text-white rounded-full py-4 w-full mt-7">ورود</button>
 
             </div>
-        </div>
-    
+        </main>
         </>
      );
 }
  
-export default page;
+export default Page;

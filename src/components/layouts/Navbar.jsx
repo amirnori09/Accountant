@@ -1,3 +1,6 @@
+import Page from "@/app/login/page";
+import Link from "next/link";
+
 const Navbar = () => {
   return (
     <div className="navbar">
@@ -5,6 +8,9 @@ const Navbar = () => {
         <a className="btn btn-ghost">خانه</a>
         <a className="btn btn-ghost">فروشگاه</a>
         <a className="btn btn-ghost">معرفی محصول</a>
+        <Link href="/login">
+          <button>ورود</button>
+        </Link>
       </div>
 
       <div className="">

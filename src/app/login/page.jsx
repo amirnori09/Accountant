@@ -10,7 +10,7 @@ const Page = () => {
                     <p className="text-xl mb-7 font-semibold">ورود به حساب کاربری</p>
                     <form action="" className="flex flex-col flex-grow">
                         <p className="text-gray-700 mb-5 text-lg">شماره موبایل</p>
-                        <input className="w-72 px-3 py-3 rounded-full bg-gray-50 focus:outline-none text-sm" type="text" placeholder="شماره تلفن خود را وارد کنید"/>
+                        <input className="w-72 px-3 py-3.5 rounded-full bg-gray-50 focus:outline-none text-sm" type="text" placeholder="شماره تلفن خود را وارد کنید"/>
                     </form>
                     <button className="bg-[#003928] text-white rounded-full py-3 w-full mt-7">ورود</button>
 

@@ -1,6 +1,7 @@
 const Page = () => {
     return ( 
         <>
+        
         <main className="container flex items-center justify-center my-52 ">
             <div className="py-16 px-8 shadow-lg rounded-lg">
                 <div className="flex flex-col justify-center items-start w-72 mr-2 ml-12">
@@ -10,12 +11,12 @@ const Page = () => {
                         <p className="text-gray-700 mb-5 text-lg">کدتایید</p>
                         {/* <input className="w-72 px-3 py-3.5 rounded-full bg-gray-50 focus:outline-none text-sm" type="text"/> */}
                         <div class="flex gap-4 max-w-lg mx-auto justify-center font-[sans-serif] bg-gray-100 pt-3 pb-3 px-8 rounded-full">
-                            <input type="text" class="w-8 h-10 flex items-center text-center  text-gray-500  border-b-2 border-gray-300 focus:border-b-gray-400 outline-none bg-transparent text-xl" />
-                            <input type="text" class="w-8 h-10 flex items-center text-center  text-gray-500 text-xl border-b-2 border-gray-300 focus:border-b-gray-400 outline-none bg-transparent" />
-                            <input type="text" class="w-8 h-10 flex items-center text-center  text-gray-500 text-xl border-b-2 border-gray-300 focus:border-b-gray-400 outline-none bg-transparent" />
-                            <input type="text" class="w-8 h-10 flex items-center text-center  text-gray-500 text-xl border-b-2 border-gray-300 focus:border-b-gray-400 outline-none bg-transparent" />
-                            <input type="text" class="w-8 h-10 flex items-center text-center  text-gray-500 text-xl border-b-2 border-gray-300 focus:border-b-gray-400 outline-none bg-transparent" />
-                            <input type="text" class="w-8 h-10 flex items-center text-center  text-gray-500 text-xl border-b-2 border-gray-300 focus:border-b-gray-400 outline-none bg-transparent" />
+                            <input type="number" class="w-8 h-10 flex items-center text-center  text-gray-500 text-xl border-b-2 border-gray-300 focus:border-b-gray-400 outline-none bg-transparent " maxlength="1" />
+                            <input type="number" class="w-8 h-10 flex items-center text-center  text-gray-500 text-xl border-b-2 border-gray-300 focus:border-b-gray-400 outline-none bg-transparent" maxlength="1" />
+                            <input type="number" class="w-8 h-10 flex items-center text-center  text-gray-500 text-xl border-b-2 border-gray-300 focus:border-b-gray-400 outline-none bg-transparent" maxlength="1" />
+                            <input type="number" class="w-8 h-10 flex items-center text-center  text-gray-500 text-xl border-b-2 border-gray-300 focus:border-b-gray-400 outline-none bg-transparent" maxlength="1" />
+                            <input type="number" class="w-8 h-10 flex items-center text-center  text-gray-500 text-xl border-b-2 border-gray-300 focus:border-b-gray-400 outline-none bg-transparent" maxlength="1" />
+                            <input type="number" class="w-8 h-10 flex items-center text-center  text-gray-500 text-xl border-b-2 border-gray-300 focus:border-b-gray-400 outline-none bg-transparent" maxlength="1" />
                         </div>
                         <a href="#" className="mt-3 text-blue-800 font-light text-md">ارسال مجدد کد</a>
                     </form>
@@ -29,8 +30,11 @@ const Page = () => {
                 </div>
             </div>
         </main>
+        <script>
+            
+        </script>
         </>
      );
 }
- 
+
 export default Page;

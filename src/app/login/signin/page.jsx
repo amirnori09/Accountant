@@ -8,12 +8,13 @@ function page() {
     return (
         <div className='h-screen sm:w-full w-[360px] sm:flex sm:justify-center sm:items-center'>
             <main className="container sm:flex items-center justify-center sm:my-52 my-32 ">
-                <div className="py-16 px-5 shadow-lg rounded-lg flex justify-center items-center">
+                <div className="py-16 px-5 shadow-xl rounded-lg flex justify-center items-center">
                     <div className="flex flex-col justify-center w-72 ml-12">
                         {/* <img src="" alt="" /> */}
                         <p className="text-xl font-black mb-8 te8">ورود به حساب کاربری</p>
                         <form action="" className="flex flex-col flex-grow">
-                        
+                            <p className="text-gray-700 mb-5 text-lg">کد تایید</p>
+
                             <OtpInput
                                 value={otp}
                                 onChange={setOtp}
